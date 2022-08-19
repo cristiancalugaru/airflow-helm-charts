@@ -27,7 +27,7 @@ entries:
       url: https://github.com/cristiancalugaru
     name: airflow
     sources:
-    - https://github.com/cristiancalugaru/airflow-helm-charts/tree/main/charts/airflow
+    - https://github.com/cristiancalugaru/airflow-helm-charts/tree/disable_pv_checks/charts/airflow
     urls:
     - https://github.com/cristiancalugaru/airflow-helm-charts/releases/download/airflow-8.5.3/airflow-8.5.3.tgz
     version: 8.5.3

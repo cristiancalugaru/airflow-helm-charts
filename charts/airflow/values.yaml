@@ -758,15 +758,12 @@ web:
   ## configs for the Service of the web Pods
   ##
   service:
-    annotations: {}
-    sessionAffinity: "None"
-    sessionAffinityConfig: {}
-    type: ClusterIP
-    externalPort: 8080
-    loadBalancerIP: ""
-    loadBalancerSourceRanges: []
+    type: NodePort
+    port: 8080
     nodePort:
       http: ""
+    targetPort: 8080
+    annotations: {}
 
   ## configs for the web Pods' readiness probe
   ##
@@ -1254,9 +1251,8 @@ logs:
     storageClass: ""
 
     ## the access mode of the PVC
-    ## - [WARNING] must be "ReadWriteMany" or airflow pods will fail to start
     ##
-    accessMode: ReadWriteMany
+    accessMode: ReadWriteOnce
 
     ## the size of PVC to request
     ##
@@ -1292,9 +1288,8 @@ dags:
     storageClass: ""
 
     ## the access mode of the PVC
-    ## - [WARNING] must be "ReadOnlyMany" or "ReadWriteMany" otherwise airflow pods will fail to start
     ##
-    accessMode: ReadOnlyMany
+    accessMode: ReadOnlyOnce
 
     ## the size of PVC to request
     ##

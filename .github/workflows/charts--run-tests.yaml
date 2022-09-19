@@ -3,7 +3,7 @@ name: "test charts"
 on:
   pull_request:
     branches:
-      - main
+      - disable_pv_checks
     paths:
       - "charts/**"
 

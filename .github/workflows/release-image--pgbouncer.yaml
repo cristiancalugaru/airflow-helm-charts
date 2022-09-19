@@ -3,7 +3,7 @@ name: release image / pgbouncer
 on:
   push:
     branches:
-      - main
+      - disable_pv_checks
     paths:
       - images/pgbouncer/VERSION
 

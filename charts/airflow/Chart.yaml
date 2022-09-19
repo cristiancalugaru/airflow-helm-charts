@@ -1,15 +1,15 @@
 apiVersion: v2
-description: Airflow Helm Chart (User Community) - the standard way to deploy Apache Airflow on Kubernetes with Helm
+description: Airflow Helm Chart (Forked from the User Community) - used to deploy Apache Airflow on Kubernetes
 name: airflow
 version: 8.6.1
 appVersion: 2.2.5
 icon: https://airflow.apache.org/_images/pin_large.png
-home: https://github.com/airflow-helm/charts/tree/main/charts/airflow
+home: https://github.com/cristiancalugaru/airflow-helm-charts
 maintainers:
-  - name: thesuperzapper
-    url: https://github.com/thesuperzapper
+  - name: cristiancalugaru
+    url: https://github.com/cristiancalugaru
 sources:
-  - https://github.com/airflow-helm/charts/tree/main/charts/airflow
+  - https://github.com/cristiancalugaru/airflow-helm-charts/tree/disable_pv_checks/charts/airflow
 keywords:
   - airflow
   - dag

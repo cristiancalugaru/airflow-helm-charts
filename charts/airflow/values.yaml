@@ -373,7 +373,7 @@ airflow:
     ## if the db-migrations Deployment/Job is created
     ## - [WARNING] if `false`, you have to MANUALLY run `airflow db upgrade` when required
     ##
-    enabled: true
+    enabled: false
 
     ## if a post-install helm Job should be used (instead of a Deployment)
     ## - [WARNING] setting `true` will NOT work with the helm `--wait` flag,

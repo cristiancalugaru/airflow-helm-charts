@@ -3,7 +3,7 @@ entries:
   airflow:
   - apiVersion: v2
     appVersion: 2.2.5
-    created: "2022-09-19T21:04:20.140022736Z"
+    created: "2022-06-22T09:26:42.465983541Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -13,9 +13,9 @@ entries:
       name: redis
       repository: https://charts.helm.sh/stable
       version: 10.5.7
-    description: Airflow Helm Chart (Forked from the User Community) - used to deploy
-      Apache Airflow on Kubernetes
-    digest: 1ce5bc82e3d664ee3ad451001f81ae3b5bd0d65f78202938daef900ec48306d6
+    description: Airflow Helm Chart (User Community) - the standard way to deploy
+      Apache Airflow on Kubernetes with Helm
+    digest: fd2c0cba99633b6e80a24b9b5886e3088b06eab8fb4d7ed4bbd9afcb3d218c09
     home: https://github.com/cristiancalugaru/airflow-helm-charts
     icon: https://airflow.apache.org/_images/pin_large.png
     keywords:
@@ -23,42 +23,12 @@ entries:
     - dag
     - workflow
     maintainers:
-    - name: cristiancalugaru
-      url: https://github.com/cristiancalugaru
+    - name: thesuperzapper
+      url: https://github.com/thesuperzapper
     name: airflow
     sources:
     - https://github.com/cristiancalugaru/airflow-helm-charts/tree/disable_pv_checks/charts/airflow
     urls:
     - https://github.com/cristiancalugaru/airflow-helm-charts/releases/download/airflow-8.6.1/airflow-8.6.1.tgz
     version: 8.6.1
-  - apiVersion: v2
-    appVersion: 2.1.4
-    created: "2022-08-19T13:34:48.802674198Z"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: https://charts.helm.sh/stable
-      version: 8.6.4
-    - condition: redis.enabled
-      name: redis
-      repository: https://charts.helm.sh/stable
-      version: 10.5.7
-    description: Airflow Helm Chart (Forked from User Community) - used to deploy
-      Apache Airflow on Kubernetes
-    digest: e63d055e4ec253b3ac5cd0256f0e9b7976b48cae928d15d8f3d0a5e3fd66b6fd
-    home: https://github.com/cristiancalugaru/airflow-helm-charts
-    icon: https://airflow.apache.org/_images/pin_large.png
-    keywords:
-    - airflow
-    - dag
-    - workflow
-    maintainers:
-    - name: cristiancalugaru
-      url: https://github.com/cristiancalugaru
-    name: airflow
-    sources:
-    - https://github.com/cristiancalugaru/airflow-helm-charts/tree/disable_pv_checks/charts/airflow
-    urls:
-    - https://github.com/cristiancalugaru/airflow-helm-charts/releases/download/airflow-8.5.3/airflow-8.5.3.tgz
-    version: 8.5.3
 generated: "2022-09-19T21:04:20.140042136Z"

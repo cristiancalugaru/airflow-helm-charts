@@ -36,15 +36,12 @@ airflow:
   ##
   webserverSecretKey: "THIS IS UNSAFE!"
   
-  AIRFLOW__WEBSERVER__BASE_URL=https://dev-data-catalog.frdstr.com
-
   ## environment variables for airflow configs
   ## - airflow env-vars are structured: "AIRFLOW__{config_section}__{config_name}"
   ## - airflow configuration reference:
   ##   https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html
   ##
-  ## ____ EXAMPLE _______________
-  ##   config:
+  config:
   ##     # dag configs
   ##     AIRFLOW__CORE__LOAD_EXAMPLES: "False"
   ##     AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: "30"
@@ -57,8 +54,8 @@ airflow:
   ##     AIRFLOW__SMTP__SMTP_SSL: "False"
   ##     AIRFLOW__SMTP__SMTP_STARTTLS: "False"
   ##
-  ##     # domain used in airflow emails
-  ##     AIRFLOW__WEBSERVER__BASE_URL: "http://airflow.example.com"
+  ##     domain used in airflow 
+    AIRFLOW__WEBSERVER__BASE_URL: https://dev-data-catalog.frdstr.com
   ##
   ##     # ether environment variables
   ##     HTTP_PROXY: "http://proxy.example.com:8080"

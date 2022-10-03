@@ -35,6 +35,8 @@ airflow:
   ## - set `AIRFLOW__WEBSERVER__SECRET_KEY` with `airflow.extraEnv` from a Secret to avoid storing this in your values
   ##
   webserverSecretKey: "THIS IS UNSAFE!"
+  
+  AIRFLOW__WEBSERVER__BASE_URL=https://dev-data-catalog.frdstr.com
 
   ## environment variables for airflow configs
   ## - airflow env-vars are structured: "AIRFLOW__{config_section}__{config_name}"
